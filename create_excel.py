@@ -18,7 +18,7 @@ def create_excel(restaurant_name,restaurant_logo,latitude,longitude,cuisine_tags
 
     # insert a new column before the first column for row headings in RESTAURANT DETAILS section
     sheet.insert_cols(1)
-~
+
     # insert row headings in first column for every row
     for i, text in enumerate([ "Restaurant Name","Image URL","Latitude", "Longitude","Tags"]):
         sheet.cell(row=i+2, column=1).value = text
